@@ -1,0 +1,84 @@
+body{
+	background-image:url(e.png);
+	background-size: cover;
+}
+div{
+	border:1px solid #93afa2;
+	margin: auto;
+	width: 750px;	
+}
+
+.errores{
+	position: absolute;
+	display:none; 
+	background: green;
+	box-shadow: 0 0 10px ;
+	color: #fff;
+	font-size: 14px;
+	margin-top: -33px;
+	margin-left: 410px;
+	padding: 5px;
+	width: 200px;
+}
+
+h1{
+	color: black;
+	text-align: center;
+}
+.pr ul{
+	list-style: none;
+	width: 750px;
+	margin: 0;
+	padding: 0;
+}
+.pr li{
+	padding: 12px;
+	border-bottom: 1 solid #9293a0;
+	position: relative;
+}
+.pr label{
+	float: left;
+	display: inline-block;
+	margin-top:9px;
+	width: 150px;
+	color: white;
+}
+.pr input{
+	height: 20px;
+	padding: 5px 8px;
+	width: 220;
+	border: 1px solid #aaa;
+	box-shadow: 0 0 9px #FF0000, 0 150px 15px  #eee inset;
+	border-radius: 2px;
+	padding-right:30px;
+	-moz-transition:padding .25s;
+	-webkit-transition:padding .25s;
+	-o-transition:padding .25s;
+	background: #fff;
+}
+.pr input:focus{
+	background: #fff;
+	border: 1px solid #555;
+	box-shadow: 0 0 9px #aaa;
+	padding-right: 70px;
+}
+
+.pr button{
+	margin-left: 156px;
+	background: #68b12f;
+	border: 1px solid #509111;
+	border-radius: 5px;
+	box-shadow: 0 1px 0 0 #9fd574;
+	color: white;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow:0 -1px 0 #396715;
+}
+.pr button:hover{
+	opacity: .85;
+	cursor: pointer;
+}
+.pr button:active{
+	border: 1px solid #20911a;
+	box-shadow: 0 0 10px 5px #356b0b inset;	
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conserje </title>
+	<link rel="stylesheet" href="css/c.css" />
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript">
+<script>
+  $(document).ready(inicializar);
+  function inicializar(){
+    $("#bValidar").click(function(){
+
+      var valor1= $("#cantidad").val();
+      var valor2= $("#depto").val();
+      
+
+      if(valor1 == ""){
+        $("#mensaje1").fadeIn();
+        return false;
+      }else{
+        $("#mensaje1").fadeOut();
+          if(valor2 == ""){
+            $("#mensaje2").fadeIn();
+            return false;
+          }else{
+            $('#mensaje2').fadeOut();
+            if(valor3 == ""){
+              $("#mensaje1").fadeIn();
+              return false;
+            
+            }
+          }
+      }
+    });
+    </script>
+</head>
+
+<body>
+	<h1>Lavanderia</h1>
+	<div>
+		<h2>Edificio <input type="checkbox" name="cantidad" required>
+        <select>
+          <option value="1">Edificio 2</option>
+          <option value="2">Edificio 4</option>
+          <option value="3">Edificio 6</option>
+          <option value="4">Edificio 8</option>
+          <option value="5">Edificio 9</option>
+          
+        </select>
+    </h2>
+		
+        <h3>Cantidad de fichas <input type="checkbox" name="cantidad" required>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          
+        </select>
+    </h3>
+    <h4>NºDepto <input type="checkbox" name="depto" required>
+    <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </select>
+    </h4>
+    
+        <button class="submit" id="bValidar" type="submit">Validar</button>
+    
+</body>
+</html>
+        

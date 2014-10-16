@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="css/pr.css" />
+	<script type="text/javascript" src="jquery-1.7.min.js"></script>
+	<script type="text/javascript">
+  <title>Administrador</title>
+
+  <script>
+  $(document).ready(inicializar);
+  function inicializar(){
+    $("#bEnviar").click(function(){
+
+      var valor1= $("#nombre").val();
+      var valor2= $("#apellido").val();
+      var valor3= $("#rut").val();
+      var valor4= $("#sueldo").val();
+
+      if(valor1 == ""){
+        $("#mensaje1").fadeIn();
+        return false;
+      }else{
+        $("#mensaje1").fadeOut();
+          if(valor2 == ""){
+            $("#mensaje2").fadeIn();
+            return false;
+          }else{
+            $('#mensaje2').fadeOut();
+            if(valor3 == ""){
+              $("#mensaje3").fadeIn();
+              return false;
+            }else{
+                $('#mensaje3').fadeOut()
+                if(valor4 == ""){
+                  $("#mensaje4").fadeIn();
+                  return false;
+              }
+            }
+          }
+      }
+    });
+  }
+  </script>
+  <script>
+  $(document).ready(inicializar);
+  function inicializar(){
+    $("#bEliminar").click(function(){
+
+      var valor1= $("#nombre").val();
+      var valor2= $("#apellido").val();
+      var valor3= $("#rut").val();
+      var valor4= $("#sueldo").val();
+
+      if(valor1 == ""){
+        $("#mensaje1").fadeIn();
+        return false;
+      }else{
+        $("#mensaje1").fadeOut();
+          if(valor2 == ""){
+            $("#mensaje2").fadeIn();
+            return false;
+          }else{
+            $('#mensaje2').fadeOut();
+            if(valor3 == ""){
+              $("#mensaje3").fadeIn();
+              return false;
+            }else{
+                $('#mensaje3').fadeOut()
+                if(valor4 == ""){
+                  $("#mensaje4").fadeIn();
+                  return false;
+              }
+            }
+          }
+      }
+    });
+  }
+  </script>
+  <script>
+  $(document).ready(inicializar);
+  function inicializar(){
+    $("#bModificar").click(function(){
+
+      var valor1= $("#nombre").val();
+      var valor2= $("#apellido").val();
+      var valor3= $("#rut").val();
+      var valor4= $("#sueldo").val();
+
+      if(valor1 == ""){
+        $("#mensaje1").fadeIn();
+        return false;
+      }else{
+        $("#mensaje1").fadeOut();
+          if(valor2 == ""){
+            $("#mensaje2").fadeIn();
+            return false;
+          }else{
+            $('#mensaje2').fadeOut();
+            if(valor3 == ""){
+              $("#mensaje3").fadeIn();
+              return false;
+            }else{
+                $('#mensaje3').fadeOut()
+                if(valor4 == ""){
+                  $("#mensaje4").fadeIn();
+                  return false;
+              }
+            }
+          }
+      }
+    });
+  }
+  </script>
+
+</head>
+<body>
+	<h1>Administracion</h1>
+	<div>
+		
+        <h2>Edificios</h2><input type="checkbox" name="edificios" required>
+        <select>
+          <option value="1">Edificio1</option>
+          <option value="2">Edificio2</option>
+          <option value="3">Edificio3</option>
+          <option value="4">Edificio4</option>
+          <option value="5">Edificio5</option>
+          <option value="6">Edificio6</option>
+          <option value="7">Edificio7</option>
+          <option value="8">Edificio8</option>
+          <option value="9">Edificio9</option>
+        </select>
+        <select>
+          <option value="1">Sector Oriente</option>
+          <option value="2">Santiago Centro</option>
+        </select>
+
+      
+
+      <br>
+	
+	</div>
+  <div>
+  <h2>Mantenedor de Usuarios</h2>
+  <form class="admin">
+    <ul>
+      <li>
+        <label>Nombre de Usuario</label><input type="text" id="nombre" placeholder="">
+        <div id="mensaje1" class="errores">Ingrese el Nombre</div>
+        
+      </li>
+      <li>
+        <label>Apellido</label><input type="text" id="apellido" placeholder="">
+        <div id="mensaje2" class="errores">Ingrese el Apellido</div>
+       
+      </li>
+      <li>
+        <label>Rut</label><input type="text" id="rut" placeholder="">
+        <div id="mensaje3" class="errores">Ingrese el Rut de Usuario</div>
+      </li>
+      <li>
+        <label>Sueldo</label><input type="text" id="sueldo" placeholder="$">
+        <div id="mensaje4" class="errores">Ingrese el sueldo del Usuario</div>
+      </li>
+      <li>
+        <label>Perfil</label><input type="checkbox" name="perfil" required>
+        <select>
+          <option value="1">Titular</option>
+          <option value="2">Asistente</option>
+          <option value="3">Estudiante</option>
+        </select>
+      </li>
+      <li>
+        <button class="submit" id="bEnviar" type="submit">Guardar Datos</button>
+        <button class="submit" id="bEliminar" type="submit">Eliminar Datos</button>
+        <button class="submit" id="bModificar" type="submit">Modificar Datos</button>
+      </li>
+    </ul>
+     </form>
+  </div>
+  <body>
+
+  	<h1>Gastos Comunes</h1>
+  	<div>
+  		<form class="Gastos">
+    <ul>
+      <li>
+        <label>Luz</label><input type="text" id="luz" placeholder="$">
+        <div id="mensaje1" class="errores">Ingrese cantidad</div>
+        
+      </li>
+      <li>
+        <label>Agua</label><input type="text" id="agua" placeholder="$">
+        <div id="mensaje1" class="errores">Ingrese cantidad</div>
+        
+      </li>
+      <li>
+        <label>Gas</label><input type="text" id="gas" placeholder="$">
+        <div id="mensaje1" class="errores">Ingrese cantidad</div>
+        
+      </li>
+      <li>
+        <label>Aseo</label><input type="text" id="aseo" placeholder="$">
+        <div id="mensaje1" class="errores">Ingrese cantidad</div>
+        
+      </li>
+      <li>
+        <button class="submit" id="bEnviar" type="submit">Guardar Datos</button>
+        <button class="submit" id="bEliminar" type="submit">Eliminar Datos</button>
+        <button class="submit" id="bModificar" type="submit">Modificar Datos</button>
+      </li>
+    </ul>
+  		
+  	</div>
+  </body>
+</body>
+</html>
+	
+
+
+
+                
